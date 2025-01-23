@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ExpenseItem from './components/ExpenseItem';
 
 const App = () => {
   return (
-    <div>App</div>
-  )
+    <div classname="App">
+      <ExpenseItem />
+    </div>
+  );
 }
 
 export default App

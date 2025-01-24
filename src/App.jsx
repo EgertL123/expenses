@@ -1,5 +1,6 @@
 import React from 'react';
 import ExpenseItem from './components/ExpenseItem';
+import './components/Expenses.css'
 
 const App = () => {
   const expenses = [
@@ -15,7 +16,7 @@ const App = () => {
   }
 ] 
   return (
-    <div classname="App">
+    <div className="expenses">
       <ExpenseItem data={expenses[0]}/>
       <ExpenseItem data={expenses[1]}/>
     </div>

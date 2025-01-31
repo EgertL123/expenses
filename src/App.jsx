@@ -1,25 +1,25 @@
 import React from 'react';
-import ExpenseItem from './components/Expenses/ExpenseItem';
-import '/home/egert/expenses/src/components/Expenses/Expenses.css'
+import Expenses from './components/Expenses/Expenses';
 
 const App = () => {
   const expenses = [
   {
+    id: 1,
     date: new Date(2024, 10, 12),
     title: 'New book',
     price: 30.99
   },
   {
+    id: 2,
     date: new Date(2024, 10, 12),
     title: 'New jeans',
     price: 99.99
   }
 ] 
   return (
-    <div className="expenses">
-      <ExpenseItem data={expenses[0]}/>
-      <ExpenseItem data={expenses[1]}/>
-    </div>
+    <Expenses expenses={expenses}>
+
+    </Expenses>
   );
 }
 

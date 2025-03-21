@@ -16,14 +16,15 @@ const Expenses = ({ expenses }) => {
     }
 
     const filteredExpenses = expenses.filter((expense) => {
-        return expense.date.getFullYear().toString() === filteredYear;
+        return new Date(expense.date).getFullYear().toString() === filteredYear;
     });
 
     return (
         <Card className='expenses'>
         <ExpensesFilter
             selected={filteredYear}
-            onChangeFilter={filterChangeHandler}/>  
+            onChangeFilter={filterChangeHandler}
+        />  
         <ExpensesList expenses={filteredExpenses}/>
             </Card>
 )

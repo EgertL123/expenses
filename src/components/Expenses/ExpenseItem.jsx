@@ -13,6 +13,7 @@ const ExpenseItem = (props) => {
     }
 
     return (
+    <li>
         <div className='expense-item'>
             <ExpenseDate date={props.expenseData.date}/>
             <div className='expense-item_description'>
@@ -21,6 +22,7 @@ const ExpenseItem = (props) => {
             </div>
             <button onClick={clickHandler}>Click Me</button>
         </div>
+    </li>
     )
 }
 
